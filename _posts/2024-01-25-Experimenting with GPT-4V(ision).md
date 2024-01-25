@@ -64,7 +64,7 @@ and
 \end{document}
 ```
 
-<img title="latex image" alt="latex complied version" src="https://github.com/h3tpatel/cvlog.github.io/blob/cf86d639b260897d7f629cf7c57229c23e92751c/image-3.png">
+<img title="latex image" alt="latex complied version" src="https://github.com/h3tpatel/cvlog.github.io/blob/5a4585878f0f15ecf61e570c5f55abf2f47abc9f/assets/image-3.png">
 
 
 ```text
