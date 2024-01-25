@@ -19,7 +19,7 @@ d. Topical antimicrobial drops
 e. Topicals steroid drops
 ```
 
-<img title="NEJM Image Challenge" alt="NEJM Image" src="https://github.com/h3tpatel/cvlog.github.io/blob/d0dab9addb330e0c79ad99eb5b911efaa195d57a/assets/image-1.jpeg">
+<img title="NEJM Image Challenge" alt="NEJM Image" src="assets/image-1.jpeg">
 
 
 ```text
