@@ -1,1 +1,1 @@
-Computer Vision Blog
+Computer Vision Blog 🤖
