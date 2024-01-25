@@ -19,7 +19,7 @@ d. Topical antimicrobial drops
 e. Topicals steroid drops
 ```
 
-<img title="NEJM Image Challenge" alt="NEJM Image" src="../assets/image-1.jpeg">
+![image-1](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/e1807016-162b-47f1-8bc9-1e1e598b47b0)
 
 
 ```text
@@ -48,7 +48,7 @@ Another intriguing use case for the GPT-4 with Vision model lies in its ability 
 Prompt: can you convert this image into latex code
 ```
 
-<img title="latex image" alt="Latex Image" src="https://github.com/h3tpatel/cvlog.github.io/blob/d0dab9addb330e0c79ad99eb5b911efaa195d57a/assets/image-2.png">
+<img width="617" alt="image-2" src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/72a5aa06-0ecf-4e20-bf9c-4be57211ec88">
 
 ```text
 GPT4-V: 
@@ -63,7 +63,7 @@ and
 \end{document}
 ```
 
-<img title="latex image" alt="latex complied version" src="https://github.com/h3tpatel/cvlog.github.io/blob/5a4585878f0f15ecf61e570c5f55abf2f47abc9f/assets/image-3.png">
+<img width="589" alt="image-3" src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/d8b25c1c-648b-4fd4-a7fa-d8a389ca5864">
 
 
 ```text
@@ -72,7 +72,7 @@ Prompt: Draw an elephant using tikz, ensuring to incorporate realistic colors
 GPT4-V Complied Version:
 ```
 
-<img title="tikz image" alt="tikz complied version" src="https://github.com/h3tpatel/cvlog.github.io/blob/d0dab9addb330e0c79ad99eb5b911efaa195d57a/assets/image-4.png">
+<img width="950" alt="image-4" src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/274be9ca-6b5a-4624-923c-f37a2c8838f5">
 
 
 As we provide GPT-4V, the directive to illustrate an elephant using the TikZ library in LaTeX for visualization, it is indeed capable of generating images based on such straightforward instructions.
