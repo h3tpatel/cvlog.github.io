@@ -19,7 +19,7 @@ d. Topical antimicrobial drops
 e. Topicals steroid drops
 ```
 
-<img title="NEJM Image Challenge" alt="NEJM Image" src="assets/image-1.jpeg">
+<img title="NEJM Image Challenge" alt="NEJM Image" src="../assets/image-1.jpeg">
 
 
 ```text
@@ -49,7 +49,6 @@ Prompt: can you convert this image into latex code
 ```
 
 <img title="latex image" alt="Latex Image" src="https://github.com/h3tpatel/cvlog.github.io/blob/d0dab9addb330e0c79ad99eb5b911efaa195d57a/assets/image-2.png">
-
 
 ```text
 GPT4-V: 
