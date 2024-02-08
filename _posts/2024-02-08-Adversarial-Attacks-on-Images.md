@@ -29,13 +29,15 @@ model.eval()
 
 ```python3
 # Define the idx_to_class mapping based on the ImageNet classes
-idx_to_class = {0: 'tench, Tinca tinca',
- 1: 'goldfish, Carassius auratus',
- 2: 'great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias',
- 3: 'tiger shark, Galeocerdo cuvieri',
- 4: 'hammerhead, hammerhead shark',
- 5: 'electric ray, crampfish, numbfish, torpedo',
- 6: 'stingray',
+idx_to_class = {
+    0: 'tench',
+    1: 'goldfish',
+    # ... (other class mappings) ...
+    276: 'hyena, hyaena',
+    388: 'giant panda',
+    # ... (other class mappings) ...
+    669: 'mosquito net',
+    # ... (other class mappings) ...
 }
 ```
 
@@ -47,7 +49,7 @@ preprocess = transforms.Compose([
     transforms.ToTensor(),
 ])
 
-original_image = Image.open('/content/sample.jpeg').convert('RGB')
+original_image = Image.open('/content/panda.jpeg').convert('RGB')
 image_tensor = preprocess(original_image).unsqueeze(0).to(device)
 
 original_output = model(image_tensor)
@@ -105,7 +107,9 @@ print(f'Original Image classified as: {original_class}')
 print(f'Blurred Image classified as: {blurred_class}')
 ```
 
-#### Output Images
+#### Output:
+
+![gaussian-blur](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/39bc3630-7c8b-4f0f-840e-4a56d7e5ba94)
 
 ### Fast Gradient Sign Attack (FGSM)
 
@@ -163,7 +167,9 @@ print(f'Original Image classified as: {original_class}')
 print(f'Perturbed Image classified as: {perturbed_class}')
 ```
 
-#### Output Image including noise
+#### Output:
+
+![fgsm](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/ad0d6dfd-c6a2-44f8-9cff-3b502fde5b96)
 
 ### Projected Gradient Descent Attack (PGD)
 
@@ -242,3 +248,6 @@ plt.show()
 print(f'Original Image classified as: {original_class}')
 print(f'Adversarial Image classified as: {adv_class}')
 ```
+#### Output: 
+
+![pgd](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/c3127ef1-bdf6-45ed-8ea4-8e1c4cedbc11)
