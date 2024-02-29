@@ -10,6 +10,8 @@ In this blog post, we are going to explore and implement two cutting-edge models
 
 [![image-segmentation-and-object-tracking](URL-to-image)](https://vimeo.com/917944666 "YOLOv8 for Wildlife Tracking")
 
+[![YOLOv8 for Wildlife Tracking](https://imgur.com/M3Lyzhz)](https://vimeo.com/917944666 "YOLOv8 for Wildlife Tracking")
+
 Our approach integrates instance segmentation and object tracking to effectively monitor wildlife. This unified method aims to make a significant contribution to conservation efforts by providing precise and real-time tracking of animals in their natural habitats.
 
 Let's begin by importing the necessary libraries and setting up the device configurations.
