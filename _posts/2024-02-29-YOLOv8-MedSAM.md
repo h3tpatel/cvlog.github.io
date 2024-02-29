@@ -8,13 +8,13 @@ In this blog post, we are going to explore and implement two cutting-edge models
 
 ## YOLOv8 for Wildlife Tracking
 
-[![instance-segmentation-object-tracking](image-url)](https://player.vimeo.com/video/917944666?share=copy)
+<video src="https://vimeo.com/917944666?share=copy" controls="controls" style="max-width: 730px;"> </video>
 
 Our approach integrates instance segmentation and object tracking to effectively monitor wildlife. This unified method aims to make a significant contribution to conservation efforts by providing precise and real-time tracking of animals in their natural habitats.
 
 Let's begin by importing the necessary libraries and setting up the device configurations.
 
-```python3
+```py
 !pip install ultralytics opencv-python-headless torch torchvision torchaudio
 
 import cv2
@@ -27,7 +27,7 @@ from collections import defaultdict
 
 Since I am training the model locally, we will utilize apple silicon GPU by importing torch.device('mps') and initializing the tracking history defaultdict. Following this, we initialize the YOLO model with the specified model name.
 
-```python
+```py
 device = torch.device('mps')
 track_history = defaultdict(lambda: [])
 
