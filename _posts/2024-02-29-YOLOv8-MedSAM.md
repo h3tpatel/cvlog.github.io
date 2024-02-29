@@ -1,14 +1,6 @@
-### YOLOv8 for Wildlife and MedSAM for Medical Imaging
+### YOLOv8 for Wildlife Tracking
 
-In this blog post, we are going to explore and implement two cutting-edge models:
-
-- **YOLOv8** algorithms with **instance segmentation and object tracking**, combined with OpenCV for tracking animals in the wild.
-- **Segment Anything in Medical Images (MedSAM)** for comprehensive medical image analysis, including organs, lesions, and tissues.
-
-
-## YOLOv8 for Wildlife Tracking
-
-[![image-segmentation-and-object-tracking](URL-to-image)](https://vimeo.com/917944666 "YOLOv8 for Wildlife Tracking")
+In this blog post, we are going to explore and implement **YOLOv8** algorithms with **instance segmentation and object tracking**, combined with OpenCV for tracking animals in the wild.
 
 [![YOLOv8 for Wildlife Tracking](https://imgur.com/M3Lyzhz)](https://vimeo.com/917944666 "YOLOv8 for Wildlife Tracking")
 
@@ -99,5 +91,3 @@ out.release()
 cap.release()
 cv2.destroyAllWindows()
 ```
-
-## Segment Anything in Medical Images (MedSAM)
