@@ -2,7 +2,9 @@
 
 In this blog post, we are going to explore and implement **YOLOv8** algorithms with **instance segmentation and object tracking**, combined with OpenCV for tracking animals in the wild.
 
-[![YOLOv8 for Wildlife Tracking](https://imgur.com/M3Lyzhz)](https://vimeo.com/917944666 "YOLOv8 for Wildlife Tracking")
+**Below, you'll find the video showcasing** instance segmentation and object tracking of wildlife.
+
+[![YOLOv8 for Wildlife Tracking](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/5935fe36-1cc9-4cc2-b119-1f38eb0ed7ff)](https://vimeo.com/917944666 "instance segmentation and object tracking")
 
 Our approach integrates instance segmentation and object tracking to effectively monitor wildlife. This unified method aims to make a significant contribution to conservation efforts by providing precise and real-time tracking of animals in their natural habitats.
 
