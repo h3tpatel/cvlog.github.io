@@ -11,7 +11,7 @@ The ***RAFT (Recurrent All-Pairs Field Transforms)*** and models such as ***CoTr
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/839f4cb5-5d6c-4c4b-b2b2-98011d01303b" width="49%" />
 </p>
 <p float="left">
-  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/580d979f-46ae-4f2a-82e9-e8d161796fd0" width="49%" />
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/b3b90dd9-668b-4dc4-8b70-4655ab3fcaab" width="49%" />
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/964cdf23-ed69-4ace-9154-0e3f56de9f4d" width="49%" />
 </p>
 
