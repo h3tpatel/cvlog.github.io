@@ -53,10 +53,18 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
     pil_img = F.to_pil_image(flow_img)
     pil_img.save(output_folder / f"predicted_flow_{i}.jpg")
 ```
-
 -------
 
 **Regular grid + Segmentation mask**
+
+<p float="left">
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bd04a005-80b1-4b0a-b25a-6071dff92abb" width="49%" />
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/3d0440cd-b2d6-40f0-8c92-8f169cc2140a" width="49%" />
+</p>
+<p float="left">
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/5f620f98-cd75-4131-8d51-7296e6852378" width="49%" />
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bb9bb598-2325-4d36-9dd5-714969a0f7a8" width="49%" />
+</p>
 
 Now, let's implement the CoTracker model, which is designed for tracking points (pixels) across video frames. First, we specify the path of the video and convert it into a PyTorch tensor for further preprocessing. The video tensor is permuted to match the expected input **`(Batch x Time x Channels x Height x Width)`**. Then, we initialize the model using pre-trained checkpoints.
 
