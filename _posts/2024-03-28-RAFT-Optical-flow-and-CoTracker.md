@@ -68,11 +68,15 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
 
 #### **New Insights into Animals: Pollination to Migration, Flight Dynamics to Social Behavior**
 
-As shown in the trained model on hummingbird videos, we can track the movement of hummingbirds as they fly between flowers. Analyzing these videos yields insights into the *fascinating mutualistic relationships hummingbirds have with the plants they pollinate*. Studying hummingbird and flower morphologies can help explain the interaction patterns seen in hummingbird-plant networks.
+1. **Hummingbird movement tracking**: As shown in the trained model on hummingbird videos, we can track the movement of hummingbirds as they fly between flowers.
 
-Another use case is quantifying hummingbird *flight dynamics*, including their complex wing kinematics during hovering and maneuvering. By identifying individuals based on their *unique plumage patterns* and tracking them across camera feeds, we could monitor populations, reveal movement patterns, and estimate abundances.
+2. **Hummingbird-plant relationships**: Analyzing these videos yields insights into the *fascinating mutualistic relationships hummingbirds have with the plants they pollinate*. Studying hummingbird and flower morphologies can help explain the interaction patterns seen in hummingbird-plant networks.
 
-#### Code of **Regular grid + Segmentation mask**
+3. **Flight dynamics**: Another use case is quantifying hummingbird *flight dynamics*, including their complex wing kinematics during hovering and maneuvering. 
+
+4. **Individual identification and population monitoring**: By identifying individuals based on their *unique plumage patterns* and tracking them across camera feeds, we could monitor populations, reveal movement patterns, and estimate abundances.
+
+#### **CoTracker Implementation: Regular grid + Visualize Track Traces**
 
 Now, let's implement the CoTracker model, which is designed for tracking points (pixels) across video frames. First, we specify the path of the video and convert it into a PyTorch tensor for further preprocessing. The video tensor is permuted to match the expected input **`(Batch x Time x Channels x Height x Width)`**. Then, we initialize the model using pre-trained checkpoints.
 
