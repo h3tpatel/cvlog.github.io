@@ -53,22 +53,35 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
     pil_img.save(output_folder / f"predicted_flow_{i}.jpg")
 ```
 -------
-
 #### **New Insights into Animals: Pollination to Migration, Flight Dynamics to Social Behavior**
 
+#### **Insights into Hummingbird**
 <p float="left">
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bda57d14-5ac9-4caa-bf93-65a125087c49" width="49%" />
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bd04a005-80b1-4b0a-b25a-6071dff92abb" width="49%" />
-</p>
-<p float="left">
-  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/5f620f98-cd75-4131-8d51-7296e6852378" width="49%" />
-  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bb9bb598-2325-4d36-9dd5-714969a0f7a8" width="49%" />
 </p>
 
 1. **Hummingbird movement tracking**: As shown in the trained model on hummingbird videos, we can track the movement of hummingbirds as they fly between flowers.
 2. **Hummingbird-plant relationships**: Analyzing these videos yields insights into the *fascinating mutualistic relationships hummingbirds have with the plants they pollinate*. Studying hummingbird and flower morphologies can help explain the interaction patterns seen in hummingbird-plant networks.
 3. **Flight dynamics**: Another use case is quantifying hummingbird *flight dynamics*, including their complex wing kinematics during hovering and maneuvering. 
 4. **Individual identification and population monitoring**: By identifying individuals based on their *unique plumage patterns* and tracking them across camera feeds, we could monitor populations, reveal movement patterns, and estimate abundances.
+
+
+#### **Insights into Humpback Whales**
+<p float="left">
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/3a907355-def9-4e1e-a1cc-d2498c749672" width="49%" />
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/e4841d4f-eb58-4aae-bab9-7cc0f89ba642" width="49%" />
+</p>
+
+
+1. **Migration and behavior analysis**: Track migration routes, timing, and corridors using fluke photos, and classify surface behaviors like breaching and slapping to study communication, social interactions, cultural transmission, and responses to human activities and climate change.
+2. **Disturbance detection and conservation**: Detect changes in behavior, movement, or habitat usage that may indicate disturbances from human activities, helping monitor threats and inform conservation efforts.
+3. **Comprehensive modeling at scale**: Integrate acoustic, visual, environmental, and movement data to build comprehensive behavioral models and enable large-scale analysis, revealing population-level and long-term trends.
+
+<p float="left">
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/5f620f98-cd75-4131-8d51-7296e6852378" width="49%" />
+  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bb9bb598-2325-4d36-9dd5-714969a0f7a8" width="49%" />
+</p>
 
 #### **CoTracker Implementation: Regular grid + Visualize Track Traces**
 
