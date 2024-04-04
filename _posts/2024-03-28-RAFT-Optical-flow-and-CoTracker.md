@@ -57,12 +57,14 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
 
 <p float="left">
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bd04a005-80b1-4b0a-b25a-6071dff92abb" width="49%" />
-  <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/3d0440cd-b2d6-40f0-8c92-8f169cc2140a" width="49%" />
+  <img src="" width="49%" />
 </p>
 <p float="left">
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/5f620f98-cd75-4131-8d51-7296e6852378" width="49%" />
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bb9bb598-2325-4d36-9dd5-714969a0f7a8" width="49%" />
 </p>
+
+### New Insights into Animals: Pollination to Migration, Flight Dynamics to Social Behavior
 
 As shown in the trained model on hummingbird videos, we can track the movement of hummingbirds as they fly between flowers. Analyzing these videos yields insights into the *fascinating mutualistic relationships hummingbirds have with the plants they pollinate*. Studying hummingbird and flower morphologies can help explain the interaction patterns seen in hummingbird-plant networks.
 
