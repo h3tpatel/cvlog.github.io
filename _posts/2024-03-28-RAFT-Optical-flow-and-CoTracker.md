@@ -54,6 +54,8 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
 ```
 -------
 
+#### **New Insights into Animals: Pollination to Migration, Flight Dynamics to Social Behavior**
+
 <p float="left">
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bda57d14-5ac9-4caa-bf93-65a125087c49" width="49%" />
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bd04a005-80b1-4b0a-b25a-6071dff92abb" width="49%" />
@@ -63,13 +65,11 @@ for i, (img1, img2) in enumerate(zip(frames, frames[1:])):
   <img src="https://github.com/h3tpatel/cvlog.github.io/assets/144167031/bb9bb598-2325-4d36-9dd5-714969a0f7a8" width="49%" />
 </p>
 
-#### **New Insights into Animals: Pollination to Migration, Flight Dynamics to Social Behavior**
-
 1. **Hummingbird movement tracking**: As shown in the trained model on hummingbird videos, we can track the movement of hummingbirds as they fly between flowers.
 2. **Hummingbird-plant relationships**: Analyzing these videos yields insights into the *fascinating mutualistic relationships hummingbirds have with the plants they pollinate*. Studying hummingbird and flower morphologies can help explain the interaction patterns seen in hummingbird-plant networks.
 3. **Flight dynamics**: Another use case is quantifying hummingbird *flight dynamics*, including their complex wing kinematics during hovering and maneuvering. 
 4. **Individual identification and population monitoring**: By identifying individuals based on their *unique plumage patterns* and tracking them across camera feeds, we could monitor populations, reveal movement patterns, and estimate abundances.
---------- 
+
 #### **CoTracker Implementation: Regular grid + Visualize Track Traces**
 
 Now, let's implement the CoTracker model, which is designed for tracking points (pixels) across video frames. First, we specify the path of the video and convert it into a PyTorch tensor for further preprocessing. The video tensor is permuted to match the expected input **`(Batch x Time x Channels x Height x Width)`**. Then, we initialize the model using pre-trained checkpoints.
