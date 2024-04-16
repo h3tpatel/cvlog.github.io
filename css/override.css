@@ -36,6 +36,25 @@ hr {
   right: 0;
 }
 
+.code-button, .code-copy-button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Additional styles for code copy button */
+.code-copy-button {
+  background-color: #78837b; /* Green background for copy button */
+}
+
 .post_navi .post_navi-arrow {
   position: absolute;
   top: 50%;
