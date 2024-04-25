@@ -76,3 +76,5 @@ GPT4-V Complied Version:
 
 
 As we provide GPT-4V, the directive to illustrate an elephant using the TikZ library in LaTeX for visualization, it is indeed capable of generating images based on such straightforward instructions.
+
+<iframe src="https://tinyglb.com/viewer/506ac4b2173a4a75a7c892d7797a0e04" style="border: 0; height: 600px; width: 100%"></iframe>
