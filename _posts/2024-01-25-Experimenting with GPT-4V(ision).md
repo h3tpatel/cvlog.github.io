@@ -79,11 +79,15 @@ As we provide GPT-4V, the directive to illustrate an elephant using the TikZ lib
 
 <iframe src="https://tinyglb.com/viewer/506ac4b2173a4a75a7c892d7797a0e04" style="border: 0; height: 600px; width: 100%"></iframe>
 
+**Architectures of Unconstrained image-based dense 3D reconstruction:**
 
-It uses pointmap A dense 2D field of 3D points, denoted as $$ X \in \mathbb{R}^{W \times H \times 3} $$, where $$ W $$ and $$ H $$ are the image width and height, respectively. Each point in the pointmap corresponds to a 3D point in the scene.
+How is a point represented in 3D using a pointmap? A pointmap is a dense 2D array of 3D points, expressed as <span style="color:red">$X \in \mathbb{R}^{W \times H \times 3}$</span>, where $W$ and $H$ denote the width and height of the image, respectively.
 
-**Siamese Network with Shared Weights**: Two branches with shared Vision Transformer (ViT) encoders for feature extraction from input image pairs.
+This allows for a one-to-one mapping between image pixels and 3D scene points, such that each pixel <span style="color:red">$(i, j)$</span> in the image corresponds to a 3D point <span style="color:red">$X_{i,j}$</span> in the scene.
+
+This simplifies the process of extracting geometric data, such as depth and camera parameters, as it allows for a direct mapping from image pixels to their corresponding 3D points, enhancing tasks like multi-view stereo reconstruction without explicit knowledge of camera parameters.
+
+- **Siamese Network with Shared Weights**: Two branches with shared Vision Transformer (ViT) encoders for feature extraction from input image pairs.
 - **Transformer Decoders**: Two decoders process features with cross-attention to ensure output pointmaps are aligned in a common reference frame.
-- **Regression Heads**: Two separate heads output the pointmaps $$ X_{1,1} $$ and $$ X_{2,1} $$ and associated confidence maps $$ C_{1,1} $$ and $$ C_{2,1} $$.
-
-
+- **Regression Heads**: Two separate heads output the pointmaps <span style="color:red">$X_{1,1}$</span> and <span style="color:red">$X_{2,1}$</span> and associated confidence maps <span style="color:red">$C_{1,1}$</span> and <span style="color:red">$C_{2,1}$</span>.
+- The pointmap calculation in the architecture entails transforming regression head outputs into 3D pointmaps by reformatting and scaling, incorporating geometric transformations or normalization to standardize coordinates or adjust for camera intrinsics, i.e., using **depthmap <span style="color:red">$D$</span>** and camera intrinsic matrix <span style="color:red">$K^{-1}$</span> to compute 3D points <span style="color:red">$X_{i,j}$</span> for image pixels <span style="color:red">$(i, j)$</span> as <span style="color:red">$X_{i,j} = K^{-1} \begin{bmatrix} i \\ j \\ 1 \end{bmatrix} D_{i,j}$</span>.
