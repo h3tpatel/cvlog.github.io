@@ -80,9 +80,10 @@ As we provide GPT-4V, the directive to illustrate an elephant using the TikZ lib
 <iframe src="https://tinyglb.com/viewer/506ac4b2173a4a75a7c892d7797a0e04" style="border: 0; height: 600px; width: 100%"></iframe>
 
 
-It uses pointmap A dense 2D field of 3D points, denoted as $ X \in \mathbb{R}^{W \times H \times 3} $, where $ W $ and $ H $ are the image width and height, respectively. Each point in the pointmap corresponds to a 3D point in the scene.
+It uses pointmap A dense 2D field of 3D points, denoted as $$ X \in \mathbb{R}^{W \times H \times 3} $$, where $$ W $$ and $$ H $$ are the image width and height, respectively. Each point in the pointmap corresponds to a 3D point in the scene.
 
 **Siamese Network with Shared Weights**: Two branches with shared Vision Transformer (ViT) encoders for feature extraction from input image pairs.
 - **Transformer Decoders**: Two decoders process features with cross-attention to ensure output pointmaps are aligned in a common reference frame.
-- **Regression Heads**: Two separate heads output the pointmaps $ X_{1,1} $ and $ X_{2,1} $ and associated confidence maps $ C_{1,1} $ and $ C_{2,1} $.
+- **Regression Heads**: Two separate heads output the pointmaps $$ X_{1,1} $$ and $$ X_{2,1} $$ and associated confidence maps $$ C_{1,1} $$ and $$ C_{2,1} $$.
+
 
