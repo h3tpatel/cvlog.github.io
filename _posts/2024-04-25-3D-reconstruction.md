@@ -80,9 +80,9 @@ Global alignement - optimizing for:
 - This includes reformatting and scaling the predictions based on geometric transformations or normalization factors that align the pointmaps in a common coordinate frame or adjust them based on camera intrinsics.
 
 - **Relationship to Camera Geometry**: the pointmap $$X$$ is related to the camera's intrinsic matrix $$K$$ and a depth map $$D$$ through this equation:
-  ```math
+  $$
   X_{i,j} = K^{-1} \begin{bmatrix} i \\ j \\ 1 \end{bmatrix} D_{i,j}
-  ```
+  $$
 - where, $$X_{i,j}$$ represents the 3D point corresponding to the pixel $$(i, j)$$ in the image.
 
 
