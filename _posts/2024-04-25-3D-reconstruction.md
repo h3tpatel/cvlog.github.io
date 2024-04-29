@@ -63,9 +63,9 @@ Global alignement - optimizing for:
 ![architecture](https://github.com/h3tpatel/cvlog.github.io/assets/144167031/50bf0f49-018b-4168-afcc-dfdc6af17784)
 
 
-- **How is a point represented in 3D using a pointmap?**: a pointmap is a dense 2D array of 3D points, expressed as $X \in \mathbb{R}^{W \times H \times 3}$, where $W$ and $H$ denote the width and height of the image, respectively.
+- **How is a point represented in 3D using a pointmap?**: a pointmap is a dense 2D array of 3D points, expressed as $$X \in \mathbb{R}^{W \times H \times 3}$$, where $$W$$ and $$H$$ denote the width and height of the image, respectively.
 
-- This structure allows for a one-to-one mapping between image pixels and 3D scene points, such that each pixel $(i, j)$ in the image corresponds to a 3D point $X_{i,j}$ in the scene, represented as $I_{i,j} \leftrightarrow X_{i,j}$ for all pixel coordinates $(i, j)$.
+- This structure allows for a one-to-one mapping between image pixels and 3D scene points, such that each pixel $$(i, j)$$ in the image corresponds to a 3D point $$X_{i,j}$$ in the scene, represented as $$I_{i,j} \leftrightarrow X_{i,j}$$ for all pixel coordinates $$(i, j)$$.
 
 - This simplifies the process of extracting geometric data, such as depth and camera parameters, as it allows for a direct mapping from image pixels to their corresponding 3D points, enhancing tasks like multi-view stereo reconstruction without explicit knowledge of camera parameters.
 
