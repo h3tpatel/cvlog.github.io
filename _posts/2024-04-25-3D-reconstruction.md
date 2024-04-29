@@ -73,17 +73,17 @@ Global alignement - optimizing for:
 
 - **Transformer Decoders**: Two decoders process features with cross-attention to ensure output pointmaps are aligned in a common reference frame.
 
-- **Regression Heads**: Two separate heads output the pointmaps $X_{1,1}$ and $X_{2,1}$ and associated confidence maps $C_{1,1}$ and $C_{2,1}$.
+- **Regression Heads**: Two separate heads output the pointmaps $$X_{1,1}$$ and $$X_{2,1}$$ and associated confidence maps $$C_{1,1}$$ and $$C_{2,1}$$.
 
 - The pointmap calculation involves transforming the outputs from the regression heads into structured 3D pointmaps.
 
 - This includes reformatting and scaling the predictions based on geometric transformations or normalization factors that align the pointmaps in a common coordinate frame or adjust them based on camera intrinsics.
 
-- **Relationship to Camera Geometry**: the pointmap $X$ is related to the camera's intrinsic matrix $K$ and a depth map $D$ through this equation:
-  $$
+- **Relationship to Camera Geometry**: the pointmap $$X$$ is related to the camera's intrinsic matrix $$K$$ and a depth map $$D$$ through this equation:
+  ```math
   X_{i,j} = K^{-1} \begin{bmatrix} i \\ j \\ 1 \end{bmatrix} D_{i,j}
-  $$
-- where, $X_{i,j}$ represents the 3D point corresponding to the pixel $(i, j)$ in the image.
+  ```
+- where, $$X_{i,j}$$ represents the 3D point corresponding to the pixel $$(i, j)$$ in the image.
 
 
 **Training Objective:**
