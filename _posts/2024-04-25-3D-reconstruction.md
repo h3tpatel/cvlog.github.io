@@ -27,11 +27,12 @@ Global alignement - optimizing for:
 (exporting 3D scene to /var/folders/y5/v82tll4j1n1b7_pn428d3s880000gn/T/scene.glb)
 ```
 
-### Challenges with Structure-from-Motion (SfM):
+#### Challenges with Structure-from-Motion (SfM):
 
-![Image Matching | Papers With Code](https://production-media.paperswithcode.com/tasks/image_matching_4Ht6D90.png)
+![Image Matching](https://production-media.paperswithcode.com/tasks/image_matching_4Ht6D90.png)
 
 **Dependency on Feature Matching**: relies heavily on detecting and matching features across multiple images. For example, in scenes with low texture or repetitive patterns, or with slender objects, feature matching can be unreliable, leading to poor reconstruction.
+
 
 ![](https://demuc.de/colmap/sparse-reconstruction.png)
 
