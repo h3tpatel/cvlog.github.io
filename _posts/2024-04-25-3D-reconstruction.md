@@ -112,19 +112,19 @@ Global alignement - optimizing for:
 ### More experimentation with models in different scenarios:
 
 <iframe src="https://tinyglb.com/viewer/4d16af0f2a6c4514bf537eb4adbff010" style="border: 0; height: 600px; width: 100%"></iframe> 
-- 3D Reconstruction from Airbnb Image Sets
+- 3D Reconstruction from Airbnb images
 
 <div style="display: flex; justify-content: space-between;">
   <div>
-    <iframe src="https://tinyglb.com/viewer/b807183cbd124077874090f637e98dcb" style="border: 0; height: 400px; width: 120%;"></iframe>
+    <iframe src="https://tinyglb.com/viewer/b807183cbd124077874090f637e98dcb" style="border: 0; height: 500px; width: 120%;"></iframe>
     <p style="text-align: center;">Masked Sky (SEAS): Single Photo</p>
   </div>
   <div>
-    <iframe src="https://tinyglb.com/viewer/a1741dcdc1cf45b78bfb84df0d4e69dd" style="border: 0; height: 400px; width: 120%;"></iframe>
+    <iframe src="https://tinyglb.com/viewer/a1741dcdc1cf45b78bfb84df0d4e69dd" style="border: 0; height: 500px; width: 120%;"></iframe>
     <p style="text-align: center;">Unmasked Sky (SEAS)</p>
   </div>
 </div>
 
 
 <iframe src="https://tinyglb.com/viewer/fdfceda838db4dbbb402fdcb42e22340" style="border: 0; height: 600px; width: 100%"></iframe>
-This model excels in *impossible matching*: it quickly constructs accurate 3D models from unrelated images, like an unseen office, without requiring camera details or positions.
+This model excels in *impossible matching*: it quickly constructs accurate 3D models from unrelated images, without requiring camera details or positions.
