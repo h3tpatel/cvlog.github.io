@@ -128,3 +128,28 @@ Global alignement - optimizing for:
 
 <iframe src="https://tinyglb.com/viewer/fdfceda838db4dbbb402fdcb42e22340" style="border: 0; height: 600px; width: 100%"></iframe>
 This model excels in *impossible matching*: it quickly constructs accurate 3D models from unrelated images, without requiring camera details or positions.
+
+### Observation and Learning:
+
+As per my observation, this model excels in areas where traditional methods struggle, often due to lack of camera calibration or unknown viewpoint poses. Below are some models that I trained in regards with this issues:
+
+**Scenarios of Impossible Matching and its Alignment:** this occurs due to **occlusion and visibility issues**, where parts of the scene are occluded in some views but visible in others.
+
+**Repetitive or Low-Texture Regions:** areas within the images that either lack distinctive features or contain repetitive patterns. Such characteristics can eventually lead to ambiguous matches between different views, complicating the alignment process
+
+**Extreme Viewpoint Changes:** although this model handles uncalibrated images from various viewpoints, extreme changes in viewpoint can still pose significant challenges.
+
+**Now, how does this model handle impossible matching without prior understanding and feature extraction?** It utilizes direct regression of point maps, along with confidence maps, which assign a weight to each point based on its confidence score during the reconstruction process. This approach helps in handling mismatches or uncertain matches.
+
+**So, instead of relying on explicit geometric constraints or feature matching**, geometric and shape priors are learned directly during the training phase of the reconstruction process. This learning enables the network to infer the 3D structure and its relationships between different parts of the image.
+
+
+<iframe src="https://tinyglb.com/viewer/7bee47b9b17a446ebae5b6036650b540" style="border: 0; height: 600px; width: 100%"></iframe>
+
+### Limitations and Challenges:
+
+- **Dynamic scenes**: this model assumes static scenes. Its performance degrades in the presence of moving objects or changes in the scene over time, as it cannot dynamically update the scene representation.
+
+- **Scale Ambiguity**: the model regresses point maps up to an unknown scale factor, which can lead to inaccuracies in absolute size measurements and depth estimates unless additional scaling information is explicitly mentioned.
+
+- **Complex geometry and textures**: the model struggles with scenes that have complex geometries or repetitive textures, where establishing accurate correspondences between different views becomes difficult.
