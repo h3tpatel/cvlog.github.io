@@ -129,9 +129,9 @@ Global alignement - optimizing for:
 <iframe src="https://tinyglb.com/viewer/fdfceda838db4dbbb402fdcb42e22340" style="border: 0; height: 600px; width: 100%"></iframe>
 This model excels in *impossible matching*: it quickly constructs accurate 3D models from unrelated images, without requiring camera details or positions.
 
-### Observation and Learning:
+### Model Analysis: Observations and Learning
 
-As per my observation, this model excels in areas where traditional methods struggle, often due to lack of camera calibration or unknown viewpoint poses. Below are some models that I trained in regards with this issues:
+As per my observation, this model excels in areas where traditional methods struggle, often due to lack of camera calibration or unknown viewpoint poses.
 
 **Scenarios of Impossible Matching and its Alignment:** this occurs due to **occlusion and visibility issues**, where parts of the scene are occluded in some views but visible in others.
 
@@ -141,12 +141,16 @@ As per my observation, this model excels in areas where traditional methods stru
 
 **Now, how does this model handle impossible matching without prior understanding and feature extraction?** It utilizes direct regression of point maps, along with confidence maps, which assign a weight to each point based on its confidence score during the reconstruction process. This approach helps in handling mismatches or uncertain matches.
 
-**So, instead of relying on explicit geometric constraints or feature matching**, geometric and shape priors are learned directly during the training phase of the reconstruction process. This learning enables the network to infer the 3D structure and its relationships between different parts of the image.
+**Rather than depending on explicit geometric constraints or feature matching**, geometric and shape priors are learned directly during the training phase of the reconstruction process. This learning enables the network to infer the 3D structure and its relationships between different parts of the image.
 
+From my perspective, instead of adhering to conventional methods in favor of innovative insights from prior learning is crucial for making substantial progress within this field.
+
+_tree -> 3d reconstruction from single-shot_
 
 <iframe src="https://tinyglb.com/viewer/7bee47b9b17a446ebae5b6036650b540" style="border: 0; height: 600px; width: 100%"></iframe>
 
-### Limitations and Challenges:
+
+### Conclusion: Identifying Limitations and Challenges
 
 - **Dynamic scenes**: this model assumes static scenes. Its performance degrades in the presence of moving objects or changes in the scene over time, as it cannot dynamically update the scene representation.
 
